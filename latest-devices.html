@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="devices.css">
+        <title>Latest Devices - Amazon</title>
+    </head>
+    <body>
+        <nav>
+        <a href="/">
+            <img src="./assets/amazon_logo.png" width="100" alt="Amazon Logo">
+        </a>
+        <div class="nav-country">
+            <img src="./assets/location_icon.png" height="20" alt="Location Icon">
+            <div>
+                <p>Deliver to</p>
+                <p>India</p>
+            </div>
+        </div>
+            <div class="nav-search">
+                <div class="nav-search-gategory">
+                    <p>All</p>
+                    <img src="./assets/dropdown_icon.png" height="12" alt="">
+                </div>
+                <input type="text" class="nav-search-input" placeholder="Search Amazon">
+                <img src="./assets/search_icon.png" class="nav-search-icon" alt="Search Icon">
+            </div>
+
+            <div class="nav-language">
+                <img src="./assets/indian_flag.png" width="20px" alt="Indian Flag">
+                <p>EN</p>
+                <img src="./assets/dropdown_icon.png" width="12px" alt="">
+            </div>
+
+            <div class="nav-text">
+                <p>Welcome, Joshua</p>
+                <h1>Account & Lists <img src="./assets/dropdown_icon.png" width="8px" alt=""> </h1>
+            </div>
+            <div class="nav-text">
+                <p>Returns</p>
+                <h1>& Orders </h1>
+            </div>
+            <a href="./cart.html" class="nav-cart">
+                <img src="./assets/cart_icon.png" width="35px" alt="Cart">
+                <div class="cart-info">
+                    <span class="cart-count" id="cartCount">0</span>
+                    <h4>Cart</h4>
+                </div>
+            </a>
+        </nav>
+
+        <div class="nav-bottom">
+            <div>
+                <img src="./assets/menu_icon.png" width="25px" alt="Menu Icon">
+                <p>All</p>
+            </div>
+            <p>Today's Deals</p>
+            <p>Customer Service</p>
+            <p>Gift Cards</p>
+            <p>Registry</p>
+            <p>Sell</p>
+        </div>
+
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <a href="#">Electronics</a>
+            <span>›</span>
+            <span class="current">Latest Devices</span>
+        </div>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Latest Devices</h1>
+            <p class="result-count">1-48 of over 2,000 results for <span>"Latest Devices"</span></p>
+        </div>
+
+        <!-- Main Content Container -->
+        <div class="main-container">
+            <!-- Sidebar Filters -->
+            <div class="filters-sidebar">
+                <div class="filter-section">
+                    <h3>Department</h3>
+                    <label><input type="checkbox" checked> Electronics</label>
+                    <label><input type="checkbox"> Cell Phones & Accessories</label>
+                    <label><input type="checkbox"> Computers & Accessories</label>
+                    <label><input type="checkbox"> Wearable Technology</label>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Category</h3>
+                    <label><input type="radio" name="category" value="all" checked> All Categories</label>
+                    <label><input type="radio" name="category" value="smartphones"> Smartphones</label>
+                    <label><input type="radio" name="category" value="laptops"> Laptops</label>
+                    <label><input type="radio" name="category" value="tablets"> Tablets</label>
+                    <label><input type="radio" name="category" value="watches"> Smart Watches</label>
+                    <label><input type="radio" name="category" value="audio"> Audio</label>
+                    <label><input type="radio" name="category" value="gaming"> Gaming</label>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Price Range</h3>
+                    <label><input type="checkbox"> Under ₹10,000</label>
+                    <label><input type="checkbox"> ₹10,000 - ₹25,000</label>
+                    <label><input type="checkbox"> ₹25,000 - ₹50,000</label>
+                    <label><input type="checkbox"> ₹50,000 - ₹1,00,000</label>
+                    <label><input type="checkbox"> Over ₹1,00,000</label>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Brand</h3>
+                    <label><input type="checkbox"> Apple</label>
+                    <label><input type="checkbox"> Samsung</label>
+                    <label><input type="checkbox"> Google</label>
+                    <label><input type="checkbox"> Dell</label>
+                    <label><input type="checkbox"> HP</label>
+                    <label><input type="checkbox"> Sony</label>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Customer Reviews</h3>
+                    <label><input type="checkbox"> ⭐⭐⭐⭐⭐ & Up</label>
+                    <label><input type="checkbox"> ⭐⭐⭐⭐ & Up</label>
+                    <label><input type="checkbox"> ⭐⭐⭐ & Up</label>
+                    <label><input type="checkbox"> ⭐⭐ & Up</label>
+                </div>
+            </div>
+
+            <!-- Products Section -->
+            <div class="products-section">
+                <!-- Sorting Options -->
+                <div class="sort-options">
+                    <span>Sort by:</span>
+                    <select id="sortSelect">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="reviews">Customer Reviews</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid" id="productsGrid">
+                    <!-- Smartphones -->
+                    <div class="product-card" data-category="smartphones" data-price="99999">
+                        <div class="product-image">
+                            <img src="./products/iphone-15-pro.jpg" alt="iPhone 15 Pro">
+                            <div class="product-badge">Bestseller</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Apple iPhone 15 Pro (128 GB) - Natural Titanium</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="review-count">4,256</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹99,999</span>
+                                <span class="original-price">₹1,34,900</span>
+                                <span class="discount">26% off</span>
+                            </div>
+                            <p class="product-description">6.1-inch Super Retina XDR display with ProMotion. A17 Pro chip for next-level performance.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                                <span class="feature">Prime</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('iphone-15-pro', 'Apple iPhone 15 Pro (128 GB)', 99999, './products/iphone-15-pro.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="smartphones" data-price="89999">
+                        <div class="product-image">
+                            <img src="./products/galaxy-s24-ultra.jpg" alt="Galaxy S24 Ultra">
+                            <div class="product-badge">New Launch</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Samsung Galaxy S24 Ultra 5G (256GB, 12GB RAM) - Titanium Black</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="review-count">3,847</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹89,999</span>
+                                <span class="original-price">₹1,29,999</span>
+                                <span class="discount">31% off</span>
+                            </div>
+                            <p class="product-description">6.8" Dynamic AMOLED 2X display. 200MP camera with AI photography. S Pen included.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                                <span class="feature">Prime</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('galaxy-s24-ultra', 'Samsung Galaxy S24 Ultra 5G', 89999, './products/galaxy-s24-ultra.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="smartphones" data-price="54999">
+                        <div class="product-image">
+                            <img src="./products/pixel-8-pro.jpg" alt="Pixel 8 Pro">
+                            <div class="product-badge">Editor's Choice</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Google Pixel 8 Pro (128GB) - Obsidian</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="review-count">2,156</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹54,999</span>
+                                <span class="original-price">₹1,06,999</span>
+                                <span class="discount">49% off</span>
+                            </div>
+                            <p class="product-description">Google Tensor G3 chip. Professional-grade camera with Magic Eraser. Pure Android experience.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                                <span class="feature">Prime</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('pixel-8-pro', 'Google Pixel 8 Pro', 54999, './products/pixel-8-pro.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="smartphones" data-price="24999">
+                        <div class="product-image">
+                            <img src="./products/galaxy-a54.jpg" alt="Galaxy A54">
+                            <div class="product-badge">Great Value</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Samsung Galaxy A54 5G (128GB, 8GB RAM) - Awesome Graphite</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="review-count">8,341</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹24,999</span>
+                                <span class="original-price">₹38,999</span>
+                                <span class="discount">36% off</span>
+                            </div>
+                            <p class="product-description">6.4" FHD+ Super AMOLED display. 50MP OIS main camera. All-day 5000mAh battery.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                                <span class="feature">Prime</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('galaxy-a54', 'Samsung Galaxy A54 5G', 24999, './products/galaxy-a54.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="smartphones" data-price="31999">
+                        <div class="product-image">
+                            <img src="./products/pixel-7a.jpg" alt="Pixel 7a">
+                        </div>
+                        <div class="product-info">
+                            <h3>Google Pixel 7a (128GB) - Sea</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="review-count">5,672</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹31,999</span>
+                                <span class="original-price">₹43,999</span>
+                                <span class="discount">27% off</span>
+                            </div>
+                            <p class="product-description">Google Tensor G2 chip. Advanced camera with Real Tone. Fast wireless charging.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('pixel-7a', 'Google Pixel 7a', 31999, './products/pixel-7a.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Laptops -->
+                    <div class="product-card" data-category="laptops" data-price="199990">
+                        <div class="product-image">
+                            <img src="./products/macbook-pro-m3.jpg" alt="MacBook Pro M3">
+                            <div class="product-badge">Professional Choice</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Apple MacBook Pro 14-inch M3 Chip (8GB RAM, 512GB SSD) - Space Grey</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="review-count">1,847</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹1,99,990</span>
+                                <span class="original-price">₹2,49,900</span>
+                                <span class="discount">20% off</span>
+                            </div>
+                            <p class="product-description">M3 chip delivers exceptional performance. Liquid Retina XDR display. Up to 22 hours battery life.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                                <span class="feature">Prime</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('macbook-pro-m3', 'Apple MacBook Pro 14-inch M3', 199990, './products/macbook-pro-m3.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="laptops" data-price="89990">
+                        <div class="product-image">
+                            <img src="./products/dell-xps-13.jpg" alt="Dell XPS 13">
+                            <div class="product-badge">Bestseller</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Dell XPS 13 Laptop (Intel Core i7, 16GB RAM, 512GB SSD) - Platinum Silver</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="review-count">3,254</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹89,990</span>
+                                <span class="original-price">₹1,19,990</span>
+                                <span class="discount">25% off</span>
+                            </div>
+                            <p class="product-description">13.4" InfinityEdge display. Intel Iris Xe graphics. Premium build quality with carbon fiber.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                                <span class="feature">Prime</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('dell-xps-13', 'Dell XPS 13 Laptop', 89990, './products/dell-xps-13.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="laptops" data-price="79990">
+                        <div class="product-image">
+                            <img src="./products/hp-spectre-x360.jpg" alt="HP Spectre x360">
+                        </div>
+                        <div class="product-info">
+                            <h3>HP Spectre x360 14 2-in-1 Laptop (Intel Core i5, 16GB RAM, 512GB SSD)</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="review-count">2,891</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹79,990</span>
+                                <span class="original-price">₹99,990</span>
+                                <span class="discount">20% off</span>
+                            </div>
+                            <p class="product-description">360-degree convertible design. OLED touch display. Intel Iris Xe graphics. Stylus included.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('hp-spectre-x360', 'HP Spectre x360 14', 79990, './products/hp-spectre-x360.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Tablets -->
+                    <div class="product-card" data-category="tablets" data-price="59990">
+                        <div class="product-image">
+                            <img src="./products/ipad-air-m2.jpg" alt="iPad Air M2">
+                            <div class="product-badge">New Arrival</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Apple iPad Air 11-inch M2 Chip (128GB) Wi-Fi - Space Grey</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="review-count">2,156</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹59,990</span>
+                                <span class="original-price">₹69,900</span>
+                                <span class="discount">14% off</span>
+                            </div>
+                            <p class="product-description">M2 chip delivers incredible performance. Liquid Retina display. Compatible with Apple Pencil Pro.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                                <span class="feature">Prime</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('ipad-air-m2', 'Apple iPad Air M2', 59990, './products/ipad-air-m2.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="tablets" data-price="45999">
+                        <div class="product-image">
+                            <img src="./products/galaxy-tab-s9.jpg" alt="Galaxy Tab S9">
+                        </div>
+                        <div class="product-info">
+                            <h3>Samsung Galaxy Tab S9 11" (128GB) Wi-Fi - Graphite</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="review-count">1,743</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹45,999</span>
+                                <span class="original-price">₹72,999</span>
+                                <span class="discount">37% off</span>
+                            </div>
+                            <p class="product-description">11" Dynamic AMOLED 2X display. Snapdragon 8 Gen 2. S Pen included. IP68 water resistant.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                                <span class="feature">Prime</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('galaxy-tab-s9', 'Samsung Galaxy Tab S9', 45999, './products/galaxy-tab-s9.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Smart Watches -->
+                    <div class="product-card" data-category="watches" data-price="41900">
+                        <div class="product-image">
+                            <img src="./products/apple-watch-9.jpg" alt="Apple Watch Series 9">
+                            <div class="product-badge">Trending</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Apple Watch Series 9 GPS 45mm Midnight Aluminum Case with Sport Band</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="review-count">5,234</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹41,900</span>
+                                <span class="original-price">₹45,900</span>
+                                <span class="discount">9% off</span>
+                            </div>
+                            <p class="product-description">S9 SiP with 4-core Neural Engine. Double Tap gesture. Brighter display. Advanced health features.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                                <span class="feature">Prime</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('apple-watch-9', 'Apple Watch Series 9', 41900, './products/apple-watch-9.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="watches" data-price="28999">
+                        <div class="product-image">
+                            <img src="./products/galaxy-watch-6.jpg" alt="Galaxy Watch 6">
+                        </div>
+                        <div class="product-info">
+                            <h3>Samsung Galaxy Watch 6 Classic 47mm LTE - Black</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="review-count">3,567</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹28,999</span>
+                                <span class="original-price">₹42,999</span>
+                                <span class="discount">33% off</span>
+                            </div>
+                            <p class="product-description">Rotating bezel navigation. Advanced sleep coaching. Body composition analysis. LTE connectivity.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                                <span class="feature">Prime</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('galaxy-watch-6', 'Samsung Galaxy Watch 6', 28999, './products/galaxy-watch-6.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Audio -->
+                    <div class="product-card" data-category="audio" data-price="24900">
+                        <div class="product-image">
+                            <img src="./products/airpods-pro-2.jpg" alt="AirPods Pro 2">
+                            <div class="product-badge">Popular Choice</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Apple AirPods Pro (2nd Generation) with MagSafe Case (USB-C)</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="review-count">12,847</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹24,900</span>
+                                <span class="original-price">₹27,900</span>
+                                <span class="discount">11% off</span>
+                            </div>
+                            <p class="product-description">H2 chip delivers richer audio. Adaptive Transparency. Personalized Spatial Audio. Touch control.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                                <span class="feature">Prime</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('airpods-pro-2', 'Apple AirPods Pro 2', 24900, './products/airpods-pro-2.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="audio" data-price="26990">
+                        <div class="product-image">
+                            <img src="./products/sony-wh1000xm5.jpg" alt="Sony WH-1000XM5">
+                            <div class="product-badge">Editor's Choice</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Sony WH-1000XM5 Wireless Industry Leading Noise Canceling Headphones</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="review-count">8,234</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹26,990</span>
+                                <span class="original-price">₹34,990</span>
+                                <span class="discount">23% off</span>
+                            </div>
+                            <p class="product-description">Industry-leading noise canceling. 30-hour battery life. Multipoint connection. Touch sensor controls.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                                <span class="feature">Prime</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('sony-wh1000xm5', 'Sony WH-1000XM5', 26990, './products/sony-wh1000xm5.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Gaming -->
+                    <div class="product-card" data-category="gaming" data-price="54990">
+                        <div class="product-image">
+                            <img src="./products/playstation-5.jpg" alt="PlayStation 5">
+                            <div class="product-badge">Limited Stock</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Sony PlayStation 5 Console (PS5) - Standard Edition</h3>
+                            <div class="product-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="review-count">15,234</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">₹54,990</span>
+                                <span class="original-price">₹54,990</span>
+                            </div>
+                            <p class="product-description">Custom CPU, GPU and SSD. Ray tracing. 3D audio. DualSense wireless controller. 4K UHD Blu-Ray.</p>
+                            <div class="product-features">
+                                <span class="feature">Free delivery</span>
+                                <span class="feature">Prime</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('playstation-5', 'Sony PlayStation 5', 54990, './products/playstation-5.jpg')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="load-more-btn" onclick="loadMoreProducts()">Load More Products</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Chatbot Floating Button -->
+        <div class="chatbot-float">
+            <button class="chatbot-btn" onclick="toggleChatbot()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 13.54 2.36 14.98 3.01 16.26L2 22L7.74 20.99C9.02 21.64 10.46 22 12 22C17.52 22 22 17.52 22 12S17.52 2 12 2ZM12 20C10.74 20 9.54 19.68 8.5 19.12L8.19 18.95L4.55 19.95L5.55 16.31L5.38 16C4.82 14.96 4.5 13.76 4.5 12.5C4.5 7.81 8.31 4 13 4S21.5 7.81 21.5 12.5S17.69 21 13 21H12Z" fill="currentColor"/>
+                    <circle cx="9" cy="12" r="1" fill="currentColor"/>
+                    <circle cx="12" cy="12" r="1" fill="currentColor"/>
+                    <circle cx="15" cy="12" r="1" fill="currentColor"/>
+                </svg>
+                <span>AI Assistant</span>
+            </button>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <img src="./assets/amazon_logo.png" width="100" alt="Amazon Logo">
+                <div class="footer-text">
+                    <p>© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+                    <p class="footer-credit">Made by <span>Colterz</span></p>
+                    <p class="footer-hackathon">For Hackathon Purpose Only</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="products.js"></script>
+    </body>
+</html>
