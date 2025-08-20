@@ -1,0 +1,2 @@
+This folder is where you add pictures that will be shown in "latest-devices.html" and "cart.html" page
+Check for the names either via running the website (easiest method) or by going through the code and all things are mentioned there in plane text. No encryptions done what so ever!
